@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memora - 你的智能录音助理</title>
+    <meta name="description" content="Memora录音手环 - 全天候录音，智能转写，AI洞察。无缝连接飞书，做你的个人数据助理。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Advanced Canvas Background -->
+    <canvas id="hero-canvas"></canvas>
+
+    <nav class="navbar">
+        <div class="logo">Memora</div>
+        <div class="nav-links">
+            <a href="#features">功能</a>
+            <a href="#vision">未来愿景</a>
+            <a href="#feishu">飞书集成</a>
+            <!-- Placeholder link as requested -->
+            <a href="https://app.feishu.cn/chat" target="_blank" class="btn-primary small">立即预订</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content parallax-layer" data-speed="0.2">
+            <h1 class="fade-in">听见<br><span class="gradient-text">你的生活</span></h1>
+            <p class="fade-in delay-1">全天候录音 · 凌晨智能处理 · 每日AI洞察</p>
+            <div class="cta-group fade-in delay-2">
+                <a href="#feishu" class="btn-primary">探索集成</a>
+                <a href="#vision" class="btn-secondary">了解愿景</a>
+            </div>
+        </div>
+        <div class="hero-visual fade-in delay-3 parallax-layer" data-speed="-0.1">
+            <div class="visual-container">
+                <div class="glow-ring"></div>
+                <!-- Updated Product Image with blending class -->
+                <img src="assets/product_hero.png" alt="Memora Wristband" class="hero-img floating blend-mode">
+            </div>
+        </div>
+    </header>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">不仅仅是录音</h2>
+            <div class="feature-grid">
+                <div class="feature-card glass">
+                    <div class="icon">🎙️</div>
+                    <h3>全天候记录</h3>
+                    <p>无感佩戴，超长续航。Memora 默默记录你的一整天，不错过任何灵感与对话。</p>
+                </div>
+                <div class="feature-card glass">
+                    <div class="icon">🌙</div>
+                    <h3>凌晨处理</h3>
+                    <p>当你入睡时，Memora 开始工作。云端高性能计算，将海量音频转化为结构化文本。</p>
+                </div>
+                <div class="feature-card glass">
+                    <div class="icon">🧠</div>
+                    <h3>AI 洞察</h3>
+                    <p>不仅是转写，更是理解。自动提取会议纪要、总结日程，并给出行动建议。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Swapped Order: Vision Section First -->
+    <section id="vision" class="vision-section">
+        <div class="container">
+            <h2 class="section-title">你的个人数据助理</h2>
+            <p class="vision-subtitle">从记录到理解，从理解到辅助。我们致力于挖掘你数据的真正价值。</p>
+
+            <div class="vision-timeline">
+                <!-- All cards are now highlighted/colored -->
+                <div class="vision-card highlight">
+                    <div class="card-visual collect"></div>
+                    <h3>采集 (Collect)</h3>
+                    <p>全天候、多模态的数据捕捉。不仅是声音，更是你生活的全息投影。</p>
+                </div>
+                <div class="arrow">➔</div>
+                <div class="vision-card highlight">
+                    <div class="card-visual store"></div>
+                    <h3>存储 (Store)</h3>
+                    <p>安全、私密的个人知识库。你的数据只属于你，构建你的数字孪生。</p>
+                </div>
+                <div class="arrow">➔</div>
+                <div class="vision-card highlight">
+                    <div class="card-visual assist"></div>
+                    <h3>助理 (Assist)</h3>
+                    <p>基于你的历史、习惯与偏好。一个真正懂你的 AI，为你规划未来，优化决策。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feishu Section Second -->
+    <section id="feishu" class="feishu-section">
+        <div class="container">
+            <div class="split-layout">
+                <div class="text-content">
+                    <h2 class="section-title left-align">无缝连接<br><span class="feishu-gradient">飞书工作流</span></h2>
+                    <p class="section-desc">让会议准备变得自动化。你只需专注沟通，剩下的交给 Memora。</p>
+
+                    <div class="steps-list">
+                        <div class="step-item">
+                            <div class="step-number">01</div>
+                            <div class="step-detail">
+                                <h4>关注机器人</h4>
+                                <p>在飞书应用目录中搜索 <strong>Memora</strong> 机器人并添加。</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number">02</div>
+                            <div class="step-detail">
+                                <h4>授权日程权限</h4>
+                                <p>一键授权，允许助手读取你的日历安排。</p>
+                            </div>
+                        </div>
+                        <div class="step-item highlight">
+                            <div class="step-number">03</div>
+                            <div class="step-detail">
+                                <h4>智能推送</h4>
+                                <p>在循环会议开始前，自动推送上次会议的纪要与待办，让你从容参会。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="visual-content glass-panel">
+                    <!-- Feishu Mockup -->
+                    <div class="chat-interface">
+                        <div class="chat-bubble bot">
+                            <div class="bot-avatar">M</div>
+                            <div class="bubble-content">
+                                <h5>📅 周会提醒</h5>
+                                <p>检测到"产品周会"将于 10 分钟后开始。</p>
+                                <div class="divider"></div>
+                                <p><strong>上次会议重点：</strong><br>1. 确认 V3 版本设计风格...<br>2. 飞书接口联调进度 100%...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h2>Memora</h2>
+                    <p>听见未来，洞察人生。</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#">隐私政策</a>
+                    <a href="#">使用条款</a>
+                    <a href="#">联系我们</a>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 Memora Inc. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
